@@ -9,3 +9,4 @@ mypkgname*.tgz
 group_11_package.Rcheck/
 group_11_package*.tar.gz
 group_11_package*.tgz
+temp.R
