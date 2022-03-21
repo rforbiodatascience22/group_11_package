@@ -2,13 +2,13 @@
 % Please edit documentation in R/plotFrequencies.R
 \name{plotFrequencies}
 \alias{plotFrequencies}
-\title{plotFrequencies}
+\title{Plot amino acid frequencies}
 \usage{
 plotFrequencies(aminoAcids)
 }
 \arguments{
-\item{aaSequence}{aaSequence}
+\item{aaSequence}{Amino acid sequence as string}
 }
 \description{
-plotFrequencies
+Plot amino acid frequencies
 }

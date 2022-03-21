@@ -2,4 +2,6 @@
 
 export(getCodons)
 export(plotFrequencies)
+export(randomDNASequence)
+export(translateRNASequence)
 importFrom(magrittr,"%>%")

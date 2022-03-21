@@ -1,8 +1,10 @@
-#' plotFrequencies
+#' Plot amino acid frequencies
 #'
-#' @param aaSequence aaSequence
+#' @param aaSequence Amino acid sequence as string
 #' @export
 #' @importFrom magrittr %>%
+#' @return Plot of amino acid frequencies
+#'
 #'
 plotFrequencies <- function(aminoAcids){
   aminoAcidsVector <- aminoAcids %>%
