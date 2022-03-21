@@ -1,12 +1,14 @@
-#' Title
+#' Get the codons of a RNA sequence
 #'
 #' @param rnaSequence
 #' @param start
 #'
-#' @return
+#' @return codons
 #' @export
 #'
 #' @examples
+#' getCodons("AUGGACUGAUCGAUGU", start = 1)
+#' [1] "AUG" "GAC" "UGA" "UCG" "AUG"
 #'
 getCodons <- function(rnaSequence, start = 1){
   rnaLength <- nchar(rnaSequence)
