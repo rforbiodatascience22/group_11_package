@@ -9,6 +9,9 @@ plotFrequencies(aminoAcids)
 \arguments{
 \item{aaSequence}{Amino acid sequence as string}
 }
+\value{
+Plot of amino acid frequencies
+}
 \description{
 Plot amino acid frequencies
 }

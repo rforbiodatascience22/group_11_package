@@ -2,7 +2,7 @@
 % Please edit documentation in R/getCodons.R
 \name{getCodons}
 \alias{getCodons}
-\title{Title}
+\title{Get the codons of a RNA sequence}
 \usage{
 getCodons(rnaSequence, start = 1)
 }
@@ -10,11 +10,13 @@ getCodons(rnaSequence, start = 1)
 \item{start}{}
 }
 \value{
-
+codons
 }
 \description{
-Title
+Get the codons of a RNA sequence
 }
 \examples{
+getCodons("AUGGACUGAUCGAUGU", start = 1)
+[1] "AUG" "GAC" "UGA" "UCG" "AUG"
 
 }

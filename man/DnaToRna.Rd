@@ -16,7 +16,7 @@ rnaSequence
 Convert DNA to RNA
 }
 \examples{
-dnaSequence(ATATATA)
-AUAUAUA
+dnaSequence("ATATATA")
+"AUAUAUA"
 
 }
