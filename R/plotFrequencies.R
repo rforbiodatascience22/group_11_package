@@ -1,6 +1,6 @@
-#' plotFrequencies
+#' Plot amino acid frequencies
 #'
-#' @param aaSequence aaSequence
+#' @param aaSequence Amino acid sequence as string
 #' @export
 #' @importFrom magrittr %>%
 #'
