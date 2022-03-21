@@ -1,4 +1,4 @@
-#' f5
+#' plotFrequencies
 #'
 #' @param name_me2 ahskdwnhsklx
 #' @export
