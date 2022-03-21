@@ -2,7 +2,7 @@
 % Please edit documentation in R/f5.R
 \name{f5}
 \alias{f5}
-\title{f5}
+\title{plotFrequencies}
 \usage{
 f5(name_me2)
 }
@@ -10,5 +10,5 @@ f5(name_me2)
 \item{name_me2}{ahskdwnhsklx}
 }
 \description{
-f5
+plotFrequencies
 }
