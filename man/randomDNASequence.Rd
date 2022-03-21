@@ -10,7 +10,7 @@ randomDNASequence(length)
 \item{length}{Length of the sequence}
 }
 \value{
-
+Random DNA sequence (string)
 }
 \description{
 Generate random DNA sequence

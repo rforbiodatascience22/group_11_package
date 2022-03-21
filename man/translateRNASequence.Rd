@@ -10,7 +10,7 @@ translateRNASequence(codons)
 \item{codons}{Vector of codons}
 }
 \value{
-
+Amino acid sequence (string)
 }
 \description{
 Translate RNA into protein
