@@ -2,7 +2,7 @@
 #'
 #' @param codons Vector of codons
 #'
-#' @return
+#' @return Amino acid sequence (string)
 #' @export
 #'
 #' @examples

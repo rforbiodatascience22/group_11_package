@@ -2,7 +2,7 @@
 #'
 #' @param length Length of the sequence
 #'
-#' @return
+#' @return Random DNA sequence (string)
 #' @export
 #'
 #' @examples
