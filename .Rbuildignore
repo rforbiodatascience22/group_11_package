@@ -1,7 +1,7 @@
-^group_11_package\.Rproj$
+^CentralDogma\.Rproj$
 ^\.Rproj\.user$
-^group_11_package\.Rcheck$
-^group_11_package.*\.tar\.gz$
-^group_11_package.*\.tgz$
+^CentralDogma\.Rcheck$
+^CentralDogma.*\.tar\.gz$
+^CentralDogma.*\.tgz$
 
 ^LICENSE\.md$

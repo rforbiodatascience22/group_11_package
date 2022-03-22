@@ -6,8 +6,8 @@
 mypkgname.Rcheck/
 mypkgname*.tar.gz
 mypkgname*.tgz
-group_11_package.Rcheck/
-group_11_package*.tar.gz
-group_11_package*.tgz
+CentralDogma.Rcheck/
+CentralDogma*.tar.gz
+CentralDogma*.tgz
 temp.R
 inst/doc

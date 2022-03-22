@@ -1,22 +1,24 @@
 ---
-title: "vignette_group_11_package"
+title: "vignette_CentralDogma"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{group_11_package}
+  %\VignetteIndexEntry{CentralDogma}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
 
-```{r, include = FALSE}
+```{r, echo = FALSE, message = FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
-  comment = "#>"
-)
-library(group_11_package)
+  comment = "#>")
+
+library(CentralDogma)
+
 ```
 
-*Group 11*
-*Github repository*: https://github.com/rforbiodatascience22/group_11_package
+
+*Group 11*\
+*Github repository*: https://github.com/rforbiodatascience22/group_11_package 
 
 #Description of the package
 When you purify and sequence DNA, you may want to:
