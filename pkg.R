@@ -6,4 +6,4 @@ devtools::load_all()
 
 devtools::build_vignettes()
 
-rmarkdown::render(input = "./vignettes/CentralDogma.Rmd")
+rmarkdown::render(input = "./vignettes/vignette_CentralDogma.Rmd")
