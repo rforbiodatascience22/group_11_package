@@ -84,4 +84,6 @@ plotFrequencies(peptideSequence)
 4. The difference between using `@importFrom package function` and `package::function()`is that the former allows to use the function repeatedly after importing, while the latter is for a one-time use.
 
 ##Other functions that could be included in the package
-A function could be created to discriminate the amino acids in the peptide sequence based on their charges. Then, this could be used in the `plotFrequencies`function to create a plot stratified by the nature of the amino acids present in our peptide. 
+A function could be created to discriminate the amino acids in the peptide sequence based on their charges. Then, this could be used in the `plotFrequencies` function to create a plot stratified by the nature of the amino acids present in our peptide. 
+
+In addition, it would also be useful to include a function to obtain the complementary strand of both the DNA and RNA, as well as another function that could transform RNA to DNA just like we have one that transcribes DNA to RNA.
