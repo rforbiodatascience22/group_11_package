@@ -1,29 +1,10 @@
 Package: CentralDogma
 Title: The package replicates the central dogma of molecular biology
 Version: 0.0.0.9000
-Author@R: 
- c(person(given = "Álvaro",
-           family = "Gutiérrez León",
-           role = c("aut", "cre"), # There must be a "cre", but there can only be one
-           email = "alvaroguleon@email.com"), 
-    person(given = "Daniel",
-           family = "Romero Yianni",
-           role = "aut",
-           email = "your@email.com"),
-    person(given = "Caroline",
-           family = "Amalie Bastholm Jensen",
-           role = "aut",
-           email = "your@email.com"),
-    person(given = "Jonas",
-           family = "Dalsberg Jørgensen",
-           role = "aut",
-           email = "your@email.com"),
-    person(given = "Jake",
-           family = "Hoang Viet Minh Pham",
-           role = "aut",
-           email = "your@email.com"),
-           )
-Description: This package allows the user to replicate the central dogma of molecular biology. 
+Authors@R: 
+    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: What the package does (one paragraph).
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)

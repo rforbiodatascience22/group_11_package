@@ -2,4 +2,6 @@ rstudioapi::documentSaveAll()
 devtools::document()
 devtools::load_all()
 
-devtools::build_
+usethis::use_vignette("CentralDogma")
+
+devtools::build_vignettes()
