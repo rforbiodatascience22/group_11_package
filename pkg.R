@@ -7,3 +7,5 @@ devtools::load_all()
 devtools::build_vignettes()
 
 rmarkdown::render(input = "./vignettes/vignette_CentralDogma.Rmd")
+usethis::use_readme_rmd( open = TRUE )
+devtools::build_readme()

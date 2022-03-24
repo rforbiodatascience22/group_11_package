@@ -3,6 +3,7 @@
 #' @param dnaSequence
 #'
 #' @return rnaSequence
+#' @export
 #'
 #' @examples
 #' dnaSequence("ATATATA")

@@ -11,3 +11,5 @@ CentralDogma*.tar.gz
 CentralDogma*.tgz
 temp.R
 inst/doc
+/doc/
+/Meta/
