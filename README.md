@@ -26,7 +26,7 @@ nucleotides and assign it to a variable:
 ``` r
 dnaSequence <- randomDNASequence(100)
 dnaSequence
-#> [1] "AACTATTTCGAGGCAATACGCTAGCGCTATTAATCGTCCCTGAGCGATATAGAATCAATATACGATTAACACTATATATGTAATATCACCCGTCTGAAAA"
+#> [1] "ATCTCAGCGCAAGGCGGGGCCGTGAGGAAGGGTTTATCTAAGCACGAACAAGGGGCCTATCGGGCTAGTAATCCGAGGCATGAAAACCATCGTGTACGAT"
 ```
 
 ## Transcribing our DNA sequence with `DnaToRna`
@@ -38,7 +38,7 @@ transcribes it to RNA.
 ``` r
 rnaSequence <- DnaToRna(dnaSequence)
 rnaSequence
-#> [1] "AACUAUUUCGAGGCAAUACGCUAGCGCUAUUAAUCGUCCCUGAGCGAUAUAGAAUCAAUAUACGAUUAACACUAUAUAUGUAAUAUCACCCGUCUGAAAA"
+#> [1] "AUCUCAGCGCAAGGCGGGGCCGUGAGGAAGGGUUUAUCUAAGCACGAACAAGGGGCCUAUCGGGCUAGUAAUCCGAGGCAUGAAAACCAUCGUGUACGAU"
 ```
 
 ## Detecting the codons in the RNA strand with `getCodons`
@@ -49,9 +49,9 @@ rnaSequence
 ``` r
 codonSequence <- getCodons(rnaSequence)
 codonSequence
-#>  [1] "AAC" "UAU" "UUC" "GAG" "GCA" "AUA" "CGC" "UAG" "CGC" "UAU" "UAA" "UCG"
-#> [13] "UCC" "CUG" "AGC" "GAU" "AUA" "GAA" "UCA" "AUA" "UAC" "GAU" "UAA" "CAC"
-#> [25] "UAU" "AUA" "UGU" "AAU" "AUC" "ACC" "CGU" "CUG" "AAA"
+#>  [1] "AUC" "UCA" "GCG" "CAA" "GGC" "GGG" "GCC" "GUG" "AGG" "AAG" "GGU" "UUA"
+#> [13] "UCU" "AAG" "CAC" "GAA" "CAA" "GGG" "GCC" "UAU" "CGG" "GCU" "AGU" "AAU"
+#> [25] "CCG" "AGG" "CAU" "GAA" "AAC" "CAU" "CGU" "GUA" "CGA"
 ```
 
 ## Translating the codon sequence into a peptide chain with `translateRNASequence`
@@ -65,7 +65,7 @@ will be represented with an asterisk \* in the output.
 ``` r
 peptideSequence <- translateRNASequence(codonSequence)
 peptideSequence
-#> [1] "NYFEAIR*RY*SSLSDIESIYD*HYICNITRLK"
+#> [1] "ISAQGGAVRKGLSKHEQGAYRASNPRHENHRVR"
 ```
 
 ## `plotFrequencies` analyses the frequency of amino acids in youor polypeptide chain
@@ -83,3 +83,45 @@ plotFrequencies(peptideSequence)
 ```
 
 <img src="man/figures/README-unnamed-chunk-8-1.png" width="100%" />
+
+# Addenda
+
+## Discussion of Task 4
+
+1.  Each function has been previously described.
+
+2.  Regarding the three packages as dependencies in function 5
+    (`plotFrequencies`), it was achieved by writing the following in the
+    console:
+
+    -   `usethis::use_package("magrittr")`
+    -   `usethis::use_package("stringr")`
+    -   `usethis::use_package("ggplot2")`
+
+    The pipe operator was included by writing `@importFrom magrittr %>%`
+
+3.  Including dependencies is necessary whenever the package uses
+    functions contained in other packages. For example, this package
+    uses functions from `ggplot2`, so its inclusion in the dependencies
+    is necessary. However, it is a good idea to try and reduce the
+    number of dependencies, as anyone using our package will be forced
+    to download all of them. The more dependencies there are, the more
+    time it will take for people to be able to use the package.
+    Furthermore, if these dependencies have dependencies of their own,
+    it will take even more time to load.
+
+4.  The difference between using `@importFrom package function` and
+    `package::function()`is that the former allows to use the function
+    repeatedly after importing, while the latter is for a one-time use.
+
+## Other functions that could be included in the package
+
+A function could be created to discriminate the amino acids in the
+peptide sequence based on their charges. Then, this could be used in the
+`plotFrequencies` function to create a plot stratified by the nature of
+the amino acids present in our peptide.
+
+In addition, it would also be useful to include a function to obtain the
+complementary strand of both the DNA and RNA, as well as another
+function that could transform RNA to DNA just like we have one that
+transcribes DNA to RNA.
