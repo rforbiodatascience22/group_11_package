@@ -13,8 +13,11 @@ knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>")
 
-library(CentralDogma)
+```
 
+
+```{r, echo = FALSE, message = FALSE}
+library(CentralDogma)
 ```
 
 
@@ -27,7 +30,7 @@ When you purify and sequence DNA, you may want to:
 * Get the codons corresponding to the translated RNA.
 * Analyse the frequency of the codons in your peptide.
 
-The `group_11_package` allows you to perform such analysis and also offers the possibility to create a random DNA sequence to practice with its set of tools.
+The `CentralDogma` allows you to perform such analysis and also offers the possibility to create a random DNA sequence to practice with its set of tools.
 
 ## Creating a random DNA sequence with `randomDNASequence`
 `randomDNASequence` takes the length of the DNA sequence as argument and returns a random selection of nucleotides.
